@@ -4,7 +4,7 @@ var bot = require('./bot')
 
 //var app = express();
 //var server = http.createServer(app);
-var io = require('socket.io')(3000);
+var io = require('socket.io')(process.env.PORT);
 
 
 // app.get('/',(req,res) => {

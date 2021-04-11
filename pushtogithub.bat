@@ -1,4 +1,4 @@
-@echo off
+@echo on
 set GIT="%programfiles%\Git\bin\git"
 %GIT% add .
 %GIT% commit -m %*

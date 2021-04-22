@@ -30,7 +30,7 @@ io.on('connection', socket => {
         socket.emit('onlineusers',bot.getOnlineUsers())
     })
     socket.on('getAllMessages',() => {
-        socket.emit('onlineusers',bot.getSentMessages())
+        socket.emit('allmessages',bot.getSentMessages())
     })
     
 })

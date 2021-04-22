@@ -25,7 +25,7 @@ socket.on('_connected', function(data){ // and once we're connected...
 })
 socket.on('message', function(data) {
     //if (data.msg == "ping") {socket.send('Pong!')}
-    
+    statedata.messages.cache.push(data)
     EventSubscriber.instance.emit('onMessage',data)
 })
 socket.on('user joined',function(data) {
